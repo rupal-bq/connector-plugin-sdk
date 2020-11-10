@@ -33,6 +33,8 @@ At Tableau, we pride ourselves in helping people see and understand their data..
 
 Review the [Tableau Connector SDK developer guide](https://tableau.github.io/connector-plugin-sdk/) to help you design, build, and test your connector.
 
+Check out [Optimizing Tableau Connectors with TDVT](https://www.youtube.com/watch?v=rAgnnByJIJA) to better understand what TDVT does and how to take advantage of it throughout the development process.
+
 You can also watch our [Tableau Conference 2019 talk](https://www.youtube.com/watch?v=_rfQtHLWWxU), where two of our developers walk through the basics of creating a custom Tableau connector and packaging it into a single `.taco` file.
 
 # Samples
@@ -44,14 +46,14 @@ The SDK includes several [standalone example connectors](https://github.com/tabl
 To work with connectors, you need the following:
 
 * Windows or Mac
-* Tableau Desktop or Server 2019.1 Beta 2 or higher
+* Tableau Desktop or Server 2019.4 or higher
 * Python 3.7 or higher
 * An ODBC or JDBC data source and driver
 * The provided test data loaded in your data source
 
 To package the connector into a .taco file, you will also need:
 
-* Tableau Desktop or Server 2019.4 Beta 1 or higher
+* Tableau Desktop or Server 2019.4 or higher
 * JDK 8 or higher
 
 For a JDBC connector, your driver must fulfill the following requirements:
