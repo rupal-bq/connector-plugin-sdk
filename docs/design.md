@@ -16,8 +16,9 @@ Because Tableau’s native connectors have special code and optimizations that m
 
 These are available <span style="font-family: courier new">superclass</span> values:
 
-- jdbc
 - odbc
+- jdbc
+- mysql_odbc
 
 You might find other superclass values in the workbook XML from an existing Tableau connection, but we don't recommend using them. They haven't been tested.
 
