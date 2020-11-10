@@ -62,13 +62,13 @@ Multiple expected files are supported.
 1. Clone the [TDVT Python module](https://github.com/tableau/connector-plugin-sdk/tree/master/tdvt).
 You can create an archive package and install that, or install from the live directory if you want to modify TDVT. Run the following commands from the top level "tdvt" directory.
     - Create an archive package in the dist folder:
-`py -3 setup.py sdist --formats gztar`
+`py setup.py sdist --formats gztar`
     - Change directory to dist and install from the archived file:
-`py -3 -m pip install tdvt-1.1.59.zip`
+`py -m pip install tdvt-1.1.59.zip`
    __Note:__ Instead of A and B, you can install the live version:
-    `py -3 -m pip install -e .`
+    `py -m pip install -e .`
     - Verify it is installed:
- `py -3 -m pip list`
+ `py -m pip list`
 
 1. Extract and then load the [TestV1 dataset](https://github.com/tableau/connector-plugin-sdk/tree/master/tests/datasets/TestV1) into your database.
 __Notes:__
@@ -88,7 +88,7 @@ TDVT checks the current working directory for the test configuration files that 
         1. Copy the connector-plugin-sdk/samples/plugins folder to tdvt_workspace.
 Note that tdvt_workspace should contain the following subdirectories: config, plugins, tds.
     - Or,  run this command set up TDVT with an empty environment:
-`py -3 -m tdvt.tdvt action --setup`
+`py -m tdvt.tdvt action --setup`
 
 1. Edit config/tdvt/tdvt_override.ini and set the path to tabquerytool.
    For example:
@@ -430,7 +430,7 @@ The first thing TDVT does is try and connect to your database using the .tds fil
    Make sure that the DConnectPluginsPath attribute is present and correct.
 
 1. Check Python version. If you are using both Python 2.x and Python 3, then run TDVT using the command:
-`py -3 tdvt.py …`
+`py tdvt.py …`
 
 1. Check tabquerytool.exe. This file should be placed in your Tableau bin directory and tdvt/config/tdvt_override.ini should be updated to point at that executable.
 
